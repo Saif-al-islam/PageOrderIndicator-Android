@@ -63,6 +63,8 @@ Include the SliderCounterView in your layout. And you can customize it like this
 | radius_counter | dimension | the radius of the view's corner.
 
 
+<img src="ScreenShot/0.png" />
+
 
 ## Code Attribute Description
 
