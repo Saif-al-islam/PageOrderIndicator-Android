@@ -1,0 +1,3 @@
+include ':PageOrderIndicatorView'
+include ':app'
+rootProject.name = "PageOrderIndicatorAndroid"

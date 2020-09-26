@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PageOrderIndicatorView">
+        <attr name="color_selected_page" format="color"/>
+        <attr name="color_selected_page_text" format="color"/>
+        <attr name="color_unSelected_page_text" format="color"/>
+        <attr name="color_selected_page_circle_text" format="color"/>
+        <attr name="color_unSelected_page_circle_text" format="color"/>
+        <attr name="page_count" format="integer"/>
+        <attr name="init_page" format="integer"/>
+        <attr name="page_elevation" format="dimension"/>
+        <attr name="isPageClickable" format="boolean"/>
+        <attr name="circle_text_padding" format="dimension"/>
+        <attr name="circle_radius_text" format="dimension"/>
+        <attr name="corner_radius_page" format="dimension"/>
+    </declare-styleable>
+
+</resources>
