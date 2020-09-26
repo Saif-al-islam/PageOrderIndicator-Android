@@ -1,4 +1,4 @@
-package com.saif.pageorderindicatorview
+package com.saif.pageorderindicator
 
 import android.content.Context
 import android.graphics.*

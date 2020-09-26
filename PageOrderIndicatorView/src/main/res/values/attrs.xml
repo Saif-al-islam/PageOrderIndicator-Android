@@ -9,6 +9,7 @@
         <attr name="color_unSelected_page_circle_text" format="color"/>
         <attr name="page_count" format="integer"/>
         <attr name="init_page" format="integer"/>
+
         <attr name="page_elevation" format="dimension"/>
         <attr name="isPageClickable" format="boolean"/>
         <attr name="circle_text_padding" format="dimension"/>
