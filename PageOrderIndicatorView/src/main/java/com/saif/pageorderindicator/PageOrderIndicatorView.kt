@@ -18,7 +18,7 @@ class PageOrderIndicatorView : View
     var colorUnSelectedPageText = Color.WHITE
     var colorSelectedPageCircleText = Color.WHITE
     var colorUnSelectedPageCircleText = Color.DKGRAY
-    var pageCount = 3
+    var pageCount = 1
         set(value) {
             field = if (value > 0) value else 1
         }

@@ -9,7 +9,6 @@
     <com.saif.pageorderindicator.PageOrderIndicatorView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
         app:color_selected_page="#04DDC8"
         app:color_selected_page_circle_text="#FFFFFF"
         app:color_selected_page_text="#000000"
@@ -20,8 +19,6 @@
         app:page_elevation="4dp"
         app:isPageClickable="true"
         app:circle_text_padding="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:page_count="3" />
 
 

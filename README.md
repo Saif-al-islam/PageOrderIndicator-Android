@@ -2,7 +2,7 @@
  [![](https://jitpack.io/v/Saif-al-islam/SlideCounter-Android.svg)](https://jitpack.io/#Saif-al-islam/SlideCounter-Android)
  [![API](https://img.shields.io/badge/API-%2B17-green.svg)]()
 
-**PageOrderIndicator** - An Android library that can increase and decrease the Count.
+**PageOrderIndicator** - An Android library that can be used as indicator for Multiple Pages. 
 
 ## Sample
 <img src="ScreenShot/1.gif" />
@@ -15,7 +15,7 @@ Include the library as a local library project or add the dependency in your bui
 
 ```groovy
 dependencies {
-	   implementation 'com.github.Saif-al-islam:SlideCounter-Android:0.1.0'
+	   implementation ''
 	}
 ```
 
@@ -34,43 +34,52 @@ allprojects {
 Include the SliderCounterView in your layout. And you can customize it like this.
 
 ```xml
-    <com.saif.slidecounter.SlideCounter
-            android:id="@+id/num_pick"
-            android:layout_width="wrap_content"
+    <com.saif.pageorderindicator.PageOrderIndicatorView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray_1"
-            app:init_counter="1"
-            app:min_counter="0"
-            app:max_counter="100"
-            app:step_counter="1"
-            app:start_color_counter="#FFFFFF"
-            app:end_color_counter="#000000"
-            app:radius_counter="12dp"
-            />
+            app:color_selected_page="#04DDC8"
+            app:color_selected_page_circle_text="#FFFFFF"
+            app:color_selected_page_text="#000000"
+            app:color_unSelected_page_circle_text="#7700EE"
+            app:color_unSelected_page_text="#FFFFFF"
+            app:corner_radius_page="22dp"
+            app:circle_radius_text="1dp"
+            app:page_elevation="4dp"
+            app:isPageClickable="true"
+            app:circle_text_padding="5dp"
+            app:page_count="3" />
 ```
 
 ## XML Attributes Description
 
 |name|format|description|
 |:---:|:---:|:---:|
-| min_counter | integer | Minimum value of the counter, default is 0
-| max_counter | integer | Maximum value of the counter and -1 for infinite counter (no maximum number), default is -1
-| init_counter | integer | Start value of the counter，default is 0
-| step_counter | integer | Increasing value for one step value of the counter，default is 1
-| counter_in_milli_seconds | Integer | Speed of the increased or decreased of the counter / the time in milliSeconds between every increased or decreased value , default is 400ms
-| start_color_counter | color | Start Color when user start dragging , default is WHITE
-| end_color_counter | color | End Color when the counter reach the end of the view , default is WHITE
-| radius_counter | dimension | the radius of the view's corner.
+| corner_radius_page | dimension | The radius of corner for every indicator that is finished , default is 0
+| circle_radius_text | dimension | The radius of corner for every circle of the number page.
+| circle_text_padding | dimension | Padding of the number page, default is 0.
+| isPageClickable | boolean | TRUE if you want to make user can select the page else FALSE, default is true.
+| page_elevation | dimension | the elevation of every page indicator that is finished, default is 4.
+| init_page | integer | Start Page , default is 0
+| page_count | integer | Total pages, default is 1
+| color_unSelected_page_circle_text | color | Explained in the below image, default is BLACK.
+| color_unSelected_page_text | color | Explained in the below image, default is WHITE.
+| color_selected_page_text | color | Explained in the below image, default is BLACK.
+| color_selected_page | color | Explained in the below image, default is BLACK.
 
+
+<img src="ScreenShot/0.png" />
 
 
 ## Code Attribute Description
 
 All the attribute of the xml can be changed throw the Java/Kotlin code in addition to:
 
-|name|parameters|description|
-|:---:|:---:|:---:|
-| setSlideCounterListener | OnSlideCounterListener | This Function is called every time the Current value of the counter change
+|name|parameters|description| Return |
+|:---:|:---:|:---:|:---:|
+|onPageChanged | Int position: current Page | This Function is called every time the current page changes. | Nothing.
+|onPageClicked | Int position: current Page | This Function is called every time a page click . | Boolean: True if you want to go to that page else false. 
+
+
 
 
 
