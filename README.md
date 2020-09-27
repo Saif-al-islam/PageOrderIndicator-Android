@@ -1,6 +1,7 @@
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
- [![](https://jitpack.io/v/Saif-al-islam/SlideCounter-Android.svg)](https://jitpack.io/#Saif-al-islam/SlideCounter-Android)
+ [![](https://jitpack.io/v/Saif-al-islam/PageOrderIndicator-Android.svg)](https://jitpack.io/#Saif-al-islam/PageOrderIndicator-Android)
  [![API](https://img.shields.io/badge/API-%2B17-green.svg)]()
+
 
 **PageOrderIndicator** - An Android library that can be used as indicator for Multiple Pages. 
 
@@ -15,7 +16,7 @@ Include the library as a local library project or add the dependency in your bui
 
 ```groovy
 dependencies {
-	   implementation ''
+	   implementation 'com.github.Saif-al-islam:PageOrderIndicator-Android:0.1.0'
 	}
 ```
 
