@@ -74,12 +74,11 @@ Include the SliderCounterView in your layout. And you can customize it like this
 
 All the attribute of the xml can be changed throw the Java/Kotlin code in addition to:
 
+### interface OnPageListener function:
 |name|parameters|description| Return |
 |:---:|:---:|:---:|:---:|
 |onPageChanged | Int position: current Page | This Function is called every time the current page changes. | Nothing.
 |onPageClicked | Int position: current Page | This Function is called every time a page click . | Boolean: True if you want to go to that page else false. 
-
-
 
 
 
